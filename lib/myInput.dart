@@ -11,11 +11,12 @@ class MyInput extends StatelessWidget {
       width: 250,
       height: 50,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(25), color: Colors.white),
+          border: Border.all(),
+          borderRadius: BorderRadius.circular(25),
+          color: Colors.white),
       child: TextField(
-        obscureText: isSecure == null? false : true,
-        decoration:
-            InputDecoration(hintText: hint, border: UnderlineInputBorder()),
+        obscureText: isSecure == null ? false : true,
+        decoration: InputDecoration(hintText: hint, border: InputBorder.none),
         textAlign: TextAlign.center,
       ),
     );
